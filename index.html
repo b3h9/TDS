@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en" class="scroll-smooth"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>TheDuBUNK studios</title> 
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <style> 
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #000000; 
+            color: #ffffff; 
+        } 
+        .character-card:hover { 
+            transform: translateY(-10px) scale(1.03); 
+            box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05); 
+        } 
+        .mystery-card { 
+            border: 2px dashed #ffffff; 
+            background-color: #000000; 
+        } 
+        .mystery-card .text-9xl { 
+            color: #ffffff; 
+        } 
+    </style> 
+</head> 
+<body class="text-white"> 
+
+    <header class="bg-black backdrop-blur-sm sticky top-0 z-50"> 
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center"> 
+            <span class="text-3xl font-black tracking-wider text-white">TheDuBUNK studios</span> 
+            <div class="hidden md:flex space-x-8 items-center"> 
+                <a href="#home" class="hover:opacity-75 transition-opacity">Home</a> 
+                <a href="#characters" class="hover:opacity-75 transition-opacity">Characters</a> 
+            </div> 
+            <button id="mobile-menu-button" class="md:hidden text-2xl"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg> 
+            </button> 
+        </nav> 
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4"> 
+            <a href="#home" class="block py-2 hover:opacity-75 transition-opacity">Home</a> 
+            <a href="#characters" class="block py-2 hover:opacity-75 transition-opacity">Characters</a> 
+        </div> 
+    </header> 
+
+    <main> 
+        <section id="home" class="bg-black min-h-screen flex items-center justify-center text-center p-6"> 
+            <div class="container mx-auto"> 
+                <h1 class="text-5xl md:text-7xl font-black text-white uppercase tracking-wider">TheDuBUNK studios</h1> 
+                <a href="https://www.youtube.com/channel/UC88tADGuhMlYHAk0tjBlywg" class="mt-4 inline-block text-2xl hover:opacity-75 transition-opacity text-blue-500">Youtube channel</a> 
+            </div> 
+        </section> 
+
+        <section id="characters" class="py-20 bg-black"> 
+            <div class="container mx-auto px-6"> 
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"> 
+                     
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=Pepo" alt="Pepo character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">Pepo</h3> 
+                    </div> 
+
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=Pepit" alt="Pepit character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">Pepit</h3> 
+                    </div> 
+                     
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=Dagit" alt="Dagit character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">Dagit</h3> 
+                    </div> 
+
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=Foink" alt="Foink character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">Foink</h3> 
+                    </div> 
+
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=Capit" alt="Capit character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">Capit</h3> 
+                    </div> 
+
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=Cirbot" alt="Cirbot character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">Cirbot</h3> 
+                    </div> 
+                     
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=japby" alt="Japby character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">japby</h3> 
+                    </div> 
+
+                    <!-- Character Card with Image -->
+                    <div class="character-card rounded-lg overflow-hidden text-center p-6"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FFFFFF/000000?text=FUNIR" alt="FUNIR character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">FUNIR</h3> 
+                    </div> 
+
+                    <!-- Villain Card with Image -->
+                    <div id="villain" class="character-card mystery-card rounded-lg overflow-hidden text-center p-6 flex flex-col justify-center items-center col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4"> 
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"> 
+                            <img src="https://placehold.co/128x128/FF0000/FFFFFF?text=Villain" alt="Villain character" class="w-full h-full object-cover">
+                        </div> 
+                        <h3 class="text-2xl font-bold">The Villain</h3> 
+                    </div> 
+                </div> 
+            </div> 
+        </section> 
+
+    </main> 
+
+    <footer class="bg-black py-6"> 
+        <div class="container mx-auto px-6 text-center text-gray-500"> 
+        </div> 
+    </footer> 
+
+    <script> 
+        const mobileMenuButton = document.getElementById('mobile-menu-button'); 
+        const mobileMenu = document.getElementById('mobile-menu'); 
+
+        mobileMenuButton.addEventListener('click', () => { 
+            mobileMenu.classList.toggle('hidden'); 
+        }); 
+
+        const mobileLinks = mobileMenu.getElementsByTagName('a'); 
+        for (let link of mobileLinks) { 
+            link.addEventListener('click', () => { 
+                mobileMenu.classList.add('hidden'); 
+            }); 
+        } 
+    </script> 
+
+</body> 
+</html>
